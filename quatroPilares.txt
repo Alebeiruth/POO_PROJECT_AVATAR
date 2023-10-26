@@ -1,0 +1,48 @@
+QUATROS PILARES POO:
+
+1. Encapsulamento > pratica de proteger dados e os comportamentos de um objeto, fornecendo uma interface controlada,
+para que eles não sejam acessados de qualquer jeito.
+Esconde atributos de uma classe por exemplo.
+
+Três tipos de proteção: public, private e proteced
+
+Public: atributos e métodos que são public podem ser acessados de fora da classe que estão definidos. São visiveis e acessiveis a qualquer codigo.
+Private: atributos e métodos que são private só pidem ser acessados dentro da propria classe que estão definidos. Para codigos externos,
+eles são ocultos e inacessiveis.
+Protected: atributos e métodos que são protected pode ser acessados dentro da classe qe estão definidos e tambem em qualquer subclasse.
+Eles são protegidos e acesseiveis aprenas a classe relacionadas.
+
+getters > metodo que RETORNA o valor de um atributo da classe
+setters > metodo que nos permite MODIFICAR o valor de um atributo da classe.
+
+2.1 Abstração > esconde os detalhes da implementação dentro de algo. Exemplo uma tv, não precisamos saber sobre os circuitos, abstração nesse caso
+é definir apenas atributos e metodos que são relevantes para utilização da televisão.
+
+2.2 Classe Abstrata > tipo especial de classe onde voce NÃO PRECISA DEFINIR OS METODOS, basta colocar os nomes deles, porem não é possivel criar nenhum objeto
+dela, não pode ser instanciada.
+Para usar seus metodos é necessario criar classes filhas que herdam metodos delas, e então definir os metodos nas classes filhas e instanciar as mesmas.
+
+3.Interface > parecem com a classe abstrata e podem ser utilizadas como tal, elas não podem ser instaciadas e precisam ser implementadas por outras classes.
+Classes que forem implementar essa interface precisarão utilizar todos os atributos e implementar todos os metodos, se não erro.
+
+Diferença entre classe abstrata x interface:
+Implementação: classe abstrata pode ter metodo implementados e tambem metodos abstratos. Na interface só é possivel METODOS ABSTRATOS, na classe abstrata
+voce pode definir e implementar metodos se quiser.
+Exetensão: classe pode herdar apenas classe abstrata, mas pode implementar varias interfaces. As classe que implementarem varias interface spodem fornecer
+funcionalidade de varias interfaces diferentes.
+Construtores: classe abstrata pode ter um contrutor mas a interface não.
+Visibilidade: menbros da interface são SEMPRE PUBLICOS, não pode usar private e protected na interface. Na classe abstrata pode haver varios niveis diferentes
+de visibilidade.
+
+Quando usar ? 
+classe abstrata serve de base para outras classesinterface é um entidade mais geral, quase como um contrato, que serve para saber quais atributos e metodosas
+as classes que a implementam devem fornecer
+
+4.Polimorfismo > capacidade do objeto assumir multiplas formas
+exemplo os animais, mamiferos, repties, peixes
+Nesse caso cria-se uma classe genereica, Animal, que define e padroniza os metodos e atributos que são comuns a todos os tipos de animais, como
+movimentar, emitir som, comer e dormir
+
+
+
+
