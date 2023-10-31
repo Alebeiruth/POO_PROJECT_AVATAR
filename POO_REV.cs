@@ -153,10 +153,12 @@ class public Tsurak extends AnimaisDePandora {
 
 //Diferença entre metodos abstratos e metodos concretos
 //metodo abstrato
+//definem uma assinatura sem implementação
 public abstract class Forma {
     public abstract double CalcularArea();
 }
 //metodo concreto
+//fornece a implementação real de um metodo em uma classe
 public class Circulo : Forma
 {
     private double raio;
