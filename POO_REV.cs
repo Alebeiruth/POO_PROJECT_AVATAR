@@ -151,6 +151,25 @@ class public Tsurak extends AnimaisDePandora {
     }
 }
 
+//Diferença entre metodos abstratos e metodos concretos
+//metodo abstrato
+public abstract class Forma {
+    public abstract double CalcularArea();
+}
+//metodo concreto
+public class Circulo : Forma
+{
+    private double raio;
+    public Circulo (double raio)
+    {
+            this.raio = raio;
+    }
+
+    public override double CalcularArea() {
+    return Math.PI * raio * raio;
+    }
+    }
+
 // abaixo classe principal
 class Program {
     static void Main(string[] args) {
